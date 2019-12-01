@@ -1,0 +1,45 @@
+Things to watch out for
+
+	Commercials
+	Missions
+	Default page, without login window
+	
+	A first Time login flag that will allow to do the line below
+	AutoRefresh of accounts inventory food, look for truffles of veg. or meat.
+	If Inv food count goes down to 0 set the SKIPACCNT to 1
+	Give an update every 1h-30min about the stat of the food on account 
+		that have inv food under 10-15 left
+
+	The outpost the acount is in matters to 'accept' the missions.
+	
+Pixels sizes 
+	Noutr region cell = (200% zoom)
+		width= 105px
+		hieght = 90px
+	Noutr region cell = (150% zoom)
+		width= 75px
+		hieght = 65px
+	Noutr Chart 
+		topLeftX = 1438
+		topLeftY = 117
+LocateAllonScreen it will sort by 
+
+	1st [1] small to large, Y axis
+	2nd [0] small to large, X axis
+
+
+#	if Locat in ALL_OUTPOSTS:
+#		Locat = 1
+#	else:
+#		if Locat in ALL_INNER_CITY:
+#			Locat = 2
+#		else:
+#			Locat = 0
+#	return Locat
+
+
+Time fuctions:
+
+>>> from time import gmtime, strftime
+>>> time.strftime("%a, %d %b %Y %H:%M:%S +0000")
+'Thu, 28 Jun 2001 14:17:15 +0000'

@@ -1,0 +1,48 @@
+C:\Users\Alex\Desktop\PythonScripts>py BuildAttempt1.py
+17:35:24.441: Finding Nourishment chart region, using 1alex12 acc...
+17:35:25.021: Chart region found: (1438, 117, 225, 325)
+17:35:25.021: Finding Browser region, using top right "x" corner...
+17:35:25.421: Web browser region found: (0, 0, 840, 1010)
+17:35:25.421: Also make sure all the web pages are at : 80 zoom, login page, inn
+er city, inventory, etc.
+17:35:25.421: Finding the boutons in the browser bookmarks toolbar...
+17:35:25.571: Found bouton: inventory in bookmark toolbar coordinates: (425, 116
+)
+17:35:25.691: Found bouton: the_yard in bookmark toolbar coordinates: (504, 115)
+
+17:35:25.831: Found bouton: storage in bookmark toolbar coordinates: (352, 116)
+17:35:25.971: Found bouton: marketplace in bookmark toolbar coordinates: (216, 1
+16)
+17:35:26.101: Found bouton: bank in bookmark toolbar coordinates: (291, 116)
+17:35:26.101: Found bouton: history_toolbar in bookmark toolbar coordinates: (13
+0, 10)
+17:35:27.101: Finding the login box region, using creation account...
+17:35:28.727: Login box region found: (130, 425, 585, 280)
+17:35:30.836: Found bouton: username_input in login box coordinates: (552, 513)
+17:35:30.950: Found bouton: password_input in login box coordinates: (553, 537)
+17:35:31.085: Found bouton: login in login box coordinates: (579, 596)
+17:35:32.950: DF_TopCenter region found: (417, 212, 193, 139)
+17:35:32.951: Found bouton: deadfrontier_top_center in login page coordinates: (
+417, 212)
+17:35:33.489: Found bouton: login_page_play_now in login page coordinates: (699,
+ 530)
+17:35:55.413: Finding the game region, using back to outpost...
+17:35:55.841: Game region found: (20, 293, 790, 560)
+17:35:55.842: Found bouton: back_to_outpost in game region coordinates: (107, 32
+0)
+17:35:55.978: Found bouton: logout in game region coordinates: (717, 321)
+17:35:55.979: Inventory region found: (226, 693, 555, 74)
+17:35:55.980: Character region found: (205, 336, 575, 455)
+17:35:55.981: Center of character: (492, 475)
+17:36:20.183: Looking for "launch_in_browser"...
+17:36:21.971: Found bouton: launch_in_browser in game region coordinates: (422,
+452)
+17:36:21.973: Found bouton: start_ic in game region coordinates: (422, 480)
+17:36:21.976: Launch in browser region found: (272, 421, 300, 113)
+17:36:22.979: Waiting for Start bouton to appear, 40 seconds...
+17:37:02.979: Going into personal outpost.
+17:37:16.687: Found bouton: inner_city_personal_outpost in character region coor
+dinates: (669, 593)
+17:37:16.688: Logging out in the innercity with account: Zoro Roronoa
+
+C:\Users\Alex\Desktop\PythonScripts>

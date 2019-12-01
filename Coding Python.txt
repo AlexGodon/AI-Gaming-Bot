@@ -1,0 +1,75 @@
+- As for FailSafe Add the code 
+	pyautogui.PAUSE = 2.5 # This will increase the time btw each pyautogui func. 
+							to allow you to move the mouse to the TOP LEFT
+
+1. Getting the color code RGB from a mouse position:
+	pixelColor = pyautogui.screenshot().getpixel((pos))
+
+	positionStr = str(pixelColor[0]).rjust(3)
+	positionStr += ',' + str(pixelColor[1]).rjust(3)
+	positionStr += ',' + str(pixelColor[2]).rjust(3)
+
+	if positionStr == '153, 23, 23':
+		logging.debug(pixelColor)
+		
+2. Define and move mouse to a certain position
+	pos = 1215 , 268
+	or
+	pos = (1215 , 268) # both will work
+	pyautogui.moveTo(pos)
+	pyautogui.moveRel(100, 0, 2)
+	pyautogui.dragTo(300, 400, 2, button='left')
+	
+3. Class, our class will need: UserName, NourPosX, NourPosY, Psw, InnerCity(0 or 1, 
+   Will call a diff func to open the account.)
+	class Complex:
+		def __init__(self, AtX, AtY,imagpart): #Constructeur
+			self.pos = AtX, AtY
+			self.i = imagpart
+		
+	cats = [ Complex(1215,268,'A')]
+	print(cats[0].pos)
+	pyautogui.moveTo(cats[0].pos)
+
+4. Arrays or Class as seen above
+	cats.append(Complex(1,2, 4)) #This will extend your array by one.
+
+4. Logging Config
+	import logging
+	logging.basicConfig(level=logging.INFO, format='%(asctime)s.%(msecs)03d: %(message)s', datefmt='%H:%M:%S')
+	logging.info('Hello You!')
+	
+5. For Loops: https://wiki.python.org/moin/ForLoop
+	list_of_lists = [ [1, 2, 3], [4, 5, 6], [7, 8, 9]]
+	for list in list_of_lists:
+		for x in list:
+			print x
+	
+	for y in cats:
+		print(y.pos)
+		print(y.i)
+		pyautogui.moveTo(y.pos)
+		
+	for x in range(10):
+		for y in range(10):
+			print ('%d * %d = %d' % (x, y, x*y))
+			
+6. Keyboard Strokes and Func to use them
+	import pyautogui
+	screenWidth, screenHeight = pyautogui.size()
+	currentMouseX, currentMouseY = pyautogui.position()
+	pyautogui.moveTo(100, 150)
+	pyautogui.click()
+	pyautogui.moveRel(None, 10)  # move mouse 10 pixels down
+	pyautogui.doubleClick()
+	pyautogui.moveTo(500, 500, duration=2, tween=pyautogui.tweens.easeInOutQuad)  # use tweening/easing function to move mouse over 2 seconds.
+	pyautogui.typewrite('Hello world!', interval=0.25)  # type with quarter-second pause in between each key
+	pyautogui.press('esc')
+	pyautogui.keyDown('shift')
+	pyautogui.press(['left', 'left', 'left', 'left', 'left', 'left'])
+	pyautogui.keyUp('shift')
+	pyautogui.hotkey('ctrl', 'c')
+	
+7. Timer Sleep Wait
+	import time
+	time.sleep(3) #This will wait 3 seconds before the code continues
