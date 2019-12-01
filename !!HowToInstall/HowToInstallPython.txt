@@ -1,0 +1,20 @@
+To install Python and pyautogui.
+
+1. Download latest version 3.xx from the website: https://www.python.org/downloads/
+	or run the "python-3.6.0.exe" in the same rep as this file.
+2. (This step should be done automatically in the installation)
+   Make sure in advanced sys setting, the variable "Path" contains the path of the pip.exe 
+   programe from the installion from the above step.
+   How to get there:
+   Start/Control Panel/System/Advanced system settings/Advanced(Tab)/Environment Variables.../System variables/Path/Edit...
+   Ex: It has "C:\Programs\Python\Python36-32\Scripts" and the .exe is located in: C:\Programs\Python\Python36-32\Scripts\pip.exe
+  
+3. Open command prompt
+4. Put in the command:
+pip install image
+(Should finish with the line: "Successfully installed django-1.10.5 image-1.5.5 olefile-0.44 pillow-4.0.0")
+
+pip install pyautogui
+(Should finish with the line: "Successfully installed PyTweening-1.0.3 pymsgbox-1.0.3 pyscreeze-0.1.8")
+
+5. Once those two python modules are installed, you can now use any python code that will move mouse or use keyboard keys.
